@@ -12,4 +12,4 @@ Enable push notifications of some kind for new achievements.
 Include a dynamic guild roster list/page.
 
 ## Current Schema
-![] (guild_crier_schema.png)
+![](guild_crier_schema.png)
