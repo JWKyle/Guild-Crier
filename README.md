@@ -10,3 +10,6 @@ Some stretch goals:
 Incorporate Blizzard's Auth so the user can log in with their Blizzard information.
 Enable push notifications of some kind for new achievements.
 Include a dynamic guild roster list/page.
+
+## Current Schema
+![] (guild_crier_schema.png)
