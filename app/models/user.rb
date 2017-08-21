@@ -1,3 +1,4 @@
+require 'bcrypt'
 class User < ActiveRecord::Base
   include BCrypt
 
@@ -8,12 +9,11 @@ class User < ActiveRecord::Base
 
 
   def password
-    @password ||= Password.new(password_type_thing)
+    @password ||= Password.new(hashed_password)
   end
 
-  def password=(plain_text_password)
-    @raw_password = plain_text_password
-    @password = Password.create(plain_text_password)
+  def password=(new_password)
+    @password = Password.create(new_password)
     self.password_type_thing = @password
   end
 end

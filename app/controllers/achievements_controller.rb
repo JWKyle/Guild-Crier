@@ -1,4 +1,4 @@
 get '/achievements' do
   @achievements = Achievement.all
-  erb :"achievement/index"
+  erb :"achievements/index"
 end
