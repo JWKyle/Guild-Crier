@@ -3,11 +3,10 @@ get '/sessions/new' do
 end
 
 post '/sessions' do
-  @user = User.find_by(username: params[:username])
-
+  @user = User.find_by(email: params[:email])
   if @user && @user.authenticate(params[:password])
     session[:user_id] = @user.id
-    redirect '/'
+    redirect '/achievements'
   else
     @message = "Please enter a valid e-mail or password."
     erb :"session/new"
@@ -16,6 +15,6 @@ post '/sessions' do
 end
 
 delete '/sessions' do
-  session.delete(:user_id)
+  session[:user_id] = nil
   redirect '/'
 end

@@ -1,6 +1,6 @@
 class CreateWoots < ActiveRecord::Migration
   def change
-    create_table :woot do |t|
+    create_table :woots do |t|
       t.integer :user_id
       t.boolean :woot
 
