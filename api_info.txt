@@ -1,0 +1,7 @@
+API moved to Postman.  Need help putting the data where I want it to go.
+
+
+I'm stuck because I'm not sure how I can incorporate the data populated from my API into my schema.
+
+
+Once I add the comment text area, I'll make that ajazable.  Possibly make a guild list to add more dynamics to page.
