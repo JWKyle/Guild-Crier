@@ -11,9 +11,13 @@ gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 
 gem 'rake'
+gem 'awesome_print'
 
 gem 'shotgun', '~>0.9.1'
 gem 'bcrypt'
+
+gem 'httparty'
+gem 'dotenv'
 
 group :test do
   gem 'shoulda-matchers'
