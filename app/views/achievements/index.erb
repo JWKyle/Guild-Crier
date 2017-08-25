@@ -1,1 +1,12 @@
 Achievements Home
+<div class="achievement-list">
+  <div class="achievement-container">
+    <ul>
+      <% @achievements.each do |achievement| %>
+        <li><%= achievement.character %></li>
+        <li><%= achievement.achievement_type %></li>
+        <li><%= achievement.item_id %></li>
+        <% end %>
+    </ul>
+  </div>
+</div>
