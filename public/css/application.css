@@ -1,5 +1,8 @@
 body {
   margin: 2%;
+  padding: 3%;
+  background-color: lightgreen;
+  font-family: fantasy, sans-serif;
 }
 
 .container {
@@ -9,4 +12,8 @@ body {
 
 .container nav ul {
   float: right;
+}
+
+.achievement-block {
+  border: medium solid purple;
 }
